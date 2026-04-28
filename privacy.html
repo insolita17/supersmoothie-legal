@@ -138,13 +138,18 @@
         <tr><td>Cloudflare R2</td><td>Storage of recipe and community photos</td><td>Global edge</td></tr>
         <tr><td>Resend</td><td>Sending transactional email (password resets, moderation alerts)</td><td>Global</td></tr>
         <tr><td>Sentry</td><td>Crash and error reporting</td><td>EU</td></tr>
+        <tr><td>OpenAI</td><td>Automated content moderation of community posts and photos (Moderation API only — never used for content generation or training)</td><td>Global</td></tr>
         <tr><td>Apple App Store / StoreKit</td><td>Subscription billing and verification (iOS)</td><td>Global</td></tr>
         <tr><td>Google Play / Play Billing</td><td>Subscription billing and verification (Android)</td><td>Global</td></tr>
       </tbody>
     </table>
-    <p>If we add a content-moderation service in the future (for example,
-    OpenAI's free Moderation API to scan posts and photos for harmful
-    content), we will list it here before turning it on.</p>
+    <p>When you publish a community post, the post text and any uploaded
+    image are sent to OpenAI's Moderation API to detect harmful content
+    (violence, sexual content involving minors, severe harassment, and
+    similar categories). OpenAI does not use Moderation API requests to
+    train its models. We use this service under a legitimate-interest
+    legal basis (community safety) and rely on Standard Contractual
+    Clauses for any transfer outside the European Economic Area.</p>
 
     <h2>5. Data retention</h2>
     <p>We keep account data for as long as your account is active. When you
